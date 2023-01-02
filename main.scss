@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+$primary-light: hsl(193, 38%, 86%);
+$primary-neon: hsl(150, 100%, 66%);
+$neutral-dark: hsl(218, 23%, 16%);
+$neutral-middle: hsl(217, 19%, 24%);
+$neutral-light: hsl(217, 19%, 38%);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: $neutral-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+//container setting
+.advice {
+  background-color: $neutral-middle;
+  border-radius: 1rem;
+  width: 360px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+
+//header and divider styling
+.advice {
+  &__header {
+    color: $primary-neon;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 2rem;
+  }
+
+  &__divider {
+    width: 100%;
+    margin-bottom: 3.5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+#advice__text {
+  color: $primary-light;
+  font-size: 28px;
+  text-align: center;
+}
+
+//button styling, absolute positioning to advice container
+.advice__btn {
+  background-color: $primary-neon;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+
+  &:hover {
+    box-shadow: 0 0 1.5rem $primary-neon;
+  }
+}
+
+//switching to desktop display, minor changes in styling
+@media (min-width: 1000px) {
+  .advice {
+    width: 550px;
+    padding: 3rem;
+
+    &__header {
+      margin: 0;
+    }
+
+    &__divider {
+      margin-bottom: 2rem;
+    }
+
+    &__btn {
+      padding: 1.3rem;
+    }
+  }
+}
+
+//footer section
+.attribution {
+  font-size: 11px;
+  color: $primary-light;
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 10vh;
+}
+.attribution a {
+  color: $primary-neon;
+}
