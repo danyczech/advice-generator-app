@@ -17,34 +17,35 @@
     <title>Frontend Mentor | Advice generator app</title>
   </head>
   <body>
-    <section class="advice">
-      <h1 class="advice__header">
-        Advice #
-        <span id="advice__number">
-          <!-- number injected by JS-->
-        </span>
-      </h1>
-      <p id="advice__text">
-        <!-- text injected by JS-->
-      </p>
-      <div class="advice__divider">
-        <picture>
-          <source
-            media="(max-width: 767px )"
-            srcset="./images/pattern-divider-mobile.svg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/pattern-divider-desktop.svg"
-          />
-          <img src="./images/pattern-divider-mobile.svg" alt="divider" />
-        </picture>
-      </div>
-      <button class="advice__btn">
-        <img src="./images/icon-dice.svg" alt="dice" />
-      </button>
-    </section>
-
+    <main>
+      <section class="advice">
+        <h1 class="advice__header">
+          Advice #
+          <span id="advice__number">
+            <!-- number injected by JS-->
+          </span>
+        </h1>
+        <p id="advice__text">
+          <!-- text injected by JS-->
+        </p>
+        <div class="advice__divider">
+          <picture>
+            <source
+              media="(max-width: 767px )"
+              srcset="./images/pattern-divider-mobile.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/pattern-divider-desktop.svg"
+            />
+            <img src="./images/pattern-divider-mobile.svg" alt="divider" />
+          </picture>
+        </div>
+        <button class="advice__btn">
+          <img src="./images/icon-dice.svg" alt="dice" />
+        </button>
+      </section>
+    </main>
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
